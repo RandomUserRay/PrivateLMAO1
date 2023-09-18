@@ -2,7 +2,7 @@ local lplr = game.Players.LocalPlayer
 local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 local blacklistTable = {
-    "04C54741-6DCE-4B59-8897-BFA881BB8607",
+    "2CC88FC1-CD34-4EE4-9284-46B33A892E25",
     "2CC88FC1-CD34-4EE4-9284-46B33A892E25"
 }
 
