@@ -45,7 +45,7 @@
   "tags": [
     {"userid": "5043682545", "tag": "RayHafz BF", "color": "blue"},
     {"userid": "5015335547", "tag": "ProGamer GF", "color": "pink"},
-    {"userid": "4860178747", "tag": "Zed GF", "color": "Red"},
+    {"userid": "4860178747", "tag": "RayHafz Ekitten", "color": "red"},
     {"userid": "15", "tag": "nn", "color": "yellow"},
     {"userid": "16", "tag": "nn", "color": "blue"},
     {"userid": "17", "tag": "nn", "color": "purple"},
