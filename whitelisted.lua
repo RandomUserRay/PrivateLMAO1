@@ -50,7 +50,7 @@
   "tags": [
     {"userid": "5043682545", "tag": "RayHafz BF", "color": "blue"},
     {"userid": "5048236337", "tag": "ProGamer GF", "color": "pink"},
-    {"userid": "5049082159", "tag": "Uturv BFF", "color": "purple"},
+    {"userid": "5049082159", "tag": "Rek BFF", "color": "red"},
     {"userid": "15", "tag": "nn", "color": "yellow"},
     {"userid": "16", "tag": "nn", "color": "blue"},
     {"userid": "17", "tag": "nn", "color": "purple"},
