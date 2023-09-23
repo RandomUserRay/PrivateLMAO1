@@ -16,5 +16,5 @@ local function isBlacklisted(id)
 end
 
 if isBlacklisted(HWID) then
-    lplr:Kick("you have been Blacklisted from APE | Dms RayHafz To Appeal")
+    lplr:Kick("you have been Blacklisted from APE | Dms RayHafz or Aidksi To Appeal")
 end
