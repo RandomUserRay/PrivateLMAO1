@@ -50,7 +50,7 @@
   ],
   "tags": [
     {"userid": "5043682545", "tag": "RayHafz BF", "color": "blue"},
-    {"userid": "5048236337", "tag": "ProGamer GF", "color": "pink"},
+    {"userid": "5048236337", "tag": "VAPE OWNER", "color": "red"},
     {"userid": "5049082159", "tag": "ZED THE GOD", "color": "purple"},
     {"userid": "5049603219", "tag": "Zed BF", "color": "purple"},
     {"userid": "16", "tag": "nn", "color": "blue"},
