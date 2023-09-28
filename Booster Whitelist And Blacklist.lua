@@ -16,7 +16,7 @@ local whitelistTable = {
         { clientID = "d43702ff-4db7-4d9c-ad99-4da86baa9dfa"},
         { clientID = "8353FD0B-B888-4FE1-A0B2-A4F2C9571C34"},
         { clientID = "4B492108-0934-4746-8BA3-D98FEF767436"},
-        { clientID = "1"},
+        { clientID = "b2a384d0-1d4d-4ada-905b-47fe38f1521e"},
         { clientID = "1"}
     }
 }
