@@ -11,13 +11,38 @@ if not HWID then
 end
 
 local whitelistTable = {
-    "1",
-    "1"
+    owner = {
+        { HWID = "04C54741-6DCE-4B59-8897-BFA881BB8607"}
+    },
+    booster = {
+        { HWID = "1"},
+        { HWID = "F49EB8B9-6D07-4388-BD3B-0ECF319736C7"},
+        { HWID = "A1F0848A-A785-46D6-9536-0EF61DF4FF1B"},
+        { HWID = "E7150B06-26DC-4569-A9AF-13E1FF37DE16"},
+        { HWID = "85F4DF04-CCBD-457E-B4AA-6A690F222D03"},
+        { HWID = "A338393B-C0BC-49B7-BA29-830C54AF4D57"}
+    }
+}
+
+local blacklistTable = {
+    "db162391-53fe-4fd2-8686-6010d0d0ea0d",
+    "2CC88FC1-CD34-4EE4-9284-46B33A892E25"
 }
 
 local function isWhitelisted(id)
-    for _, whitelistedId in ipairs(whitelistTable) do
-        if whitelistedId == id then
+    for _, group in pairs(whitelistTable) do
+        for _, user in pairs(group) do
+            if user.HWID == id then
+                return true
+            end
+        end
+    end
+    return false
+end
+
+local function isBlacklisted(id)
+    for _, blacklistedId in ipairs(blacklistTable) do
+        if blacklistedId == id then
             return true
         end
     end
@@ -28,14 +53,14 @@ local function logValidAccess(url, title, description)
     local message = {
         ['embeds'] = {
             {
-                ['title'] = "**APE Booster Script has been executed!**",
+                ['title'] = title,
                 ['description'] = description,
-                ['color'] = tonumber(0xffffff),
+                ['color'] = 0x00FF00,
                 ['fields'] = {
                     {name = 'Player Name:', value = lplr.Name},
                     {name = "Account Age: ", value = lplr.AccountAge},
                     {name = 'UserID:', value = lplr.UserId},
-                    {name = 'Hardware ID:', value = HWID},
+                    {name = 'HardWare ID:', value = HWID},
                     {name = "Config:", value = "BOOSTER"},
                     {name = "Exploit: ", value = identifyexecutor() or "Unknown"},
                     {name = "Executed on:", value = os.date("%d/%m/%Y  %H:%M")},
@@ -59,15 +84,19 @@ local function logValidAccess(url, title, description)
         })
         success = response and response.StatusCode == 200
     end
+
+    if not success then
+        warn("Failed to send webhook message.")
+    end
 end
 
 local function logUnauthorizedAccess(url, title, description)
     local message = {
         ['embeds'] = {
             {
-                ['title'] = "**Unathorized User Executed APE Booster!**",
+                ['title'] = title,
                 ['description'] = description,
-                ['color'] = tonumber(0xffffff),
+                ['color'] = 0xFF0000,
                 ['fields'] = {
                     {name = 'Player Name:', value = lplr.Name},
                     {name = "Account Age: ", value = lplr.AccountAge},
@@ -98,12 +127,16 @@ local function logUnauthorizedAccess(url, title, description)
 
         success = response and response.StatusCode == 200
     end
+
+    if not success then
+        warn("Failed to send webhook message.")
+    end
 end
 
 
-if isWhitelisted(HWID) then
+if isBlacklisted(HWID) or not isWhitelisted(HWID) then
     logUnauthorizedAccess(blekhook, "Unauthorized Access Attempt", "Player attempted to bypass whitelist.")
-    lplr:Kick("Dont Attempt To Bypass | Or Get PUNISHED")
+    lplr:Kick("ATTEMPT TO BYPASS WHITELIST | YOU'RE GONNA BE PUNISHED")
 else
-    logValidAccess(hook, "Valid Access", "Booster user playing.")
+    logValidAccess(hook, "APE Booster Has Been Executed!", "Booster user playing.")
 end
