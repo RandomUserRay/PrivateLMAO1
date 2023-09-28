@@ -13,7 +13,7 @@ end
 local whitelistTable = {
     booster = {
         { clientID = "04C54741-6DCE-4B59-8897-BFA881BB8607"},
-        { clientID = "1"},
+        { clientID = "d43702ff-4db7-4d9c-ad99-4da86baa9dfa"},
         { clientID = "1"},
         { clientID = "1"},
         { clientID = "1"},
@@ -22,8 +22,8 @@ local whitelistTable = {
 }
 
 local blacklistTable = {
-    "db162391-53fe-4fd2-8686-6010d0d0ea0d",
-    "2CC88FC1-CD34-4EE4-9284-46B33A892E25"
+    "1",
+    "1"
 }
 
 local function isWhitelisted(id)
