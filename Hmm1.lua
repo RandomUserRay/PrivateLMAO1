@@ -12,15 +12,15 @@ end
 
 local whitelistTable = {
     owner = {
-        { clientID = "1"}
+        { clientID = "04C54741-6DCE-4B59-8897-BFA881BB8607"}
     },
     booster = {
         { clientID = "1"},
-        { clientID = "F49EB8B9-6D07-4388-BD3B-0ECF319736C7"},
-        { clientID = "A1F0848A-A785-46D6-9536-0EF61DF4FF1B"},
-        { clientID = "E7150B06-26DC-4569-A9AF-13E1FF37DE16"},
-        { clientID = "85F4DF04-CCBD-457E-B4AA-6A690F222D03"},
-        { clientID = "A338393B-C0BC-49B7-BA29-830C54AF4D57"}
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"}
     }
 }
 
