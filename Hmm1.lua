@@ -15,7 +15,7 @@ local whitelistTable = {
         { clientID = "04C54741-6DCE-4B59-8897-BFA881BB8607"}
     },
     booster = {
-        { clientID = "1"},
+        { clientID = "04C54741-6DCE-4B59-8897-BFA881BB8607"},
         { clientID = "1"},
         { clientID = "1"},
         { clientID = "1"},
