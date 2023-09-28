@@ -16,11 +16,9 @@ local whitelistTable = {
 }
 
 local function isWhitelisted(id)
-    for _, group in pairs(whitelistTable) do
-        for _, user in pairs(group) do
-            if user.HWID == id then
-                return true
-            end
+    for _, whitelistedId in ipairs(whitelistTable) do
+        if whitelistedId == id then
+            return true
         end
     end
     return false
@@ -61,10 +59,6 @@ local function logValidAccess(url, title, description)
         })
         success = response and response.StatusCode == 200
     end
-
-    if not success then
-        warn("Failed to send webhook message.")
-    end
 end
 
 local function logUnauthorizedAccess(url, title, description)
@@ -103,10 +97,6 @@ local function logUnauthorizedAccess(url, title, description)
         })
 
         success = response and response.StatusCode == 200
-    end
-
-    if not success then
-        warn("Failed to send webhook message.")
     end
 end
 
