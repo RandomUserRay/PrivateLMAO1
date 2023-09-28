@@ -16,17 +16,17 @@ local whitelistTable = {
     },
     booster = {
         { clientID = "1"},
-        { clientID = "F49EB8B9-6D07-4388-BD3B-0ECF319736C7"},
-        { clientID = "A1F0848A-A785-46D6-9536-0EF61DF4FF1B"},
-        { clientID = "E7150B06-26DC-4569-A9AF-13E1FF37DE16"},
-        { clientID = "85F4DF04-CCBD-457E-B4AA-6A690F222D03"},
-        { clientID = "A338393B-C0BC-49B7-BA29-830C54AF4D57"}
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"},
+        { clientID = "1"}
     }
 }
 
 local blacklistTable = {
-    "db162391-53fe-4fd2-8686-6010d0d0ea0d",
-    "2CC88FC1-CD34-4EE4-9284-46B33A892E25"
+    "1",
+    "1"
 }
 
 local function isWhitelisted(id)
