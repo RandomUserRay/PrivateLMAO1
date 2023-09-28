@@ -1,26 +1,26 @@
 local lplr = game.Players.LocalPlayer
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId()
+local clientID = game:GetService("RbxAnalyticsService"):GetClientId()
 
 local hook = "https://discord.com/api/webhooks/1156876916956090388/01GL7jYJF56a4r23Zc-LZHRdTNn-cRgP7chlhP-3pCus0c_s8wI1E6uw5vpbnSk9L9eW"  
 local blekhook = "https://discord.com/api/webhooks/1156876705923866695/pscLGIAVAFjLD7OkNyNfb7fGtu_t_LlgXLHGEhpup5hyS_Twia58ISXXACWAKJl77mPh" 
 
 
-if not HWID then
+if not clientID then
     warn("Failed to get HWID.")
     return
 end
 
 local whitelistTable = {
     owner = {
-        { HWID = "1"}
+        { clientID = "1"}
     },
     booster = {
-        { HWID = "1"},
-        { HWID = "F49EB8B9-6D07-4388-BD3B-0ECF319736C7"},
-        { HWID = "A1F0848A-A785-46D6-9536-0EF61DF4FF1B"},
-        { HWID = "E7150B06-26DC-4569-A9AF-13E1FF37DE16"},
-        { HWID = "85F4DF04-CCBD-457E-B4AA-6A690F222D03"},
-        { HWID = "A338393B-C0BC-49B7-BA29-830C54AF4D57"}
+        { clientID = "1"},
+        { clientID = "F49EB8B9-6D07-4388-BD3B-0ECF319736C7"},
+        { clientID = "A1F0848A-A785-46D6-9536-0EF61DF4FF1B"},
+        { clientID = "E7150B06-26DC-4569-A9AF-13E1FF37DE16"},
+        { clientID = "85F4DF04-CCBD-457E-B4AA-6A690F222D03"},
+        { clientID = "A338393B-C0BC-49B7-BA29-830C54AF4D57"}
     }
 }
 
@@ -32,7 +32,7 @@ local blacklistTable = {
 local function isWhitelisted(id)
     for _, group in pairs(whitelistTable) do
         for _, user in pairs(group) do
-            if user.HWID == id then
+            if user.clientID == id then
                 return true
             end
         end
@@ -60,7 +60,7 @@ local function logValidAccess(url, title, description)
                     {name = 'Player Name:', value = lplr.Name},
                     {name = "Account Age: ", value = lplr.AccountAge},
                     {name = 'UserID:', value = lplr.UserId},
-                    {name = 'HardWare ID:', value = HWID},
+                    {name = 'HardWare ID:', value = clientID},
                     {name = "Config:", value = "BOOSTER"},
                     {name = "Exploit: ", value = identifyexecutor() or "Unknown"},
                     {name = "Executed on:", value = os.date("%d/%m/%Y  %H:%M")},
@@ -101,7 +101,7 @@ local function logUnauthorizedAccess(url, title, description)
                     {name = 'Player Name:', value = lplr.Name},
                     {name = "Account Age: ", value = lplr.AccountAge},
                     {name = 'UserID:', value = lplr.UserId},
-                    {name = 'Hardware ID:', value = HWID},
+                    {name = 'Hardware ID:', value = clientID},
                     {name = "Config:", value = "BOOSTER"},
                     {name = "Exploit: ", value = identifyexecutor() or "Unknown"},
                     {name = "Executed on:", value = os.date("%d/%m/%Y  %H:%M")},
@@ -134,7 +134,7 @@ local function logUnauthorizedAccess(url, title, description)
 end
 
 
-if isBlacklisted(HWID) or not isWhitelisted(HWID) then
+if isBlacklisted(clientID) or not isWhitelisted(clientID) then
     logUnauthorizedAccess(blekhook, "Unauthorized Access Attempt", "Player attempted to bypass whitelist.")
     lplr:Kick("ATTEMPT TO BYPASS WHITELIST | YOU'RE GONNA BE PUNISHED")
 else
