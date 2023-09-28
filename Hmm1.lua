@@ -11,14 +11,8 @@ if not HWID then
 end
 
 local whitelistTable = {
-    booster = {
-        { HWID = "1"},
-        { HWID = "1"},
-        { HWID = "1"},
-        { HWID = "1"},
-        { HWID = "1"},
-        { HWID = "1"}
-    }
+    "1",
+    "1"
 }
 
 local function isWhitelisted(id)
