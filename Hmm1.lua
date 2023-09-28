@@ -12,7 +12,7 @@ end
 
 local whitelistTable = {
     owner = {
-        { HWID = "04C54741-6DCE-4B59-8897-BFA881BB8607"}
+        { HWID = "1"}
     },
     booster = {
         { HWID = "1"},
