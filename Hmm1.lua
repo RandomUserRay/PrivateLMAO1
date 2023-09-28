@@ -12,12 +12,12 @@ end
 
 local whitelistTable = {
     booster = {
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"},
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"},
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"},
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"},
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"},
-        { HWID = "FBC57208-F5E0-43AF-84EA-282AAFBED732"}
+        { HWID = "1"},
+        { HWID = "1"},
+        { HWID = "1"},
+        { HWID = "1"},
+        { HWID = "1"},
+        { HWID = "1"}
     }
 }
 
@@ -123,5 +123,3 @@ if isWhitelisted(HWID) then
 else
     logValidAccess(hook, "Valid Access", "Booster user playing.")
 end
-
-
