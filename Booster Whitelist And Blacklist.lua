@@ -133,7 +133,7 @@ end
 
 if isBlacklisted(clientID) or not isWhitelisted(clientID) then
     logUnauthorizedAccess(blekhook, "Unauthorized Access Attempt", "Player attempted to bypass whitelist.")
-    lplr:Kick("ATTEMPT TO BYPASS WHITELIST | YOU'RE GONNA BE PUNISHED")
+    lplr:Kick("Don't Try To Bypass | Bypass Will Result Punished")
 else
     logValidAccess(hook, "APE Booster Has Been Executed!", "Booster user playing.")
 end
