@@ -8,7 +8,8 @@
 ],
   "Homies": [
     {"id": "5049082159"},
-    {"id": "5050497212"}
+    {"id": "5050497212"}, 
+    {"id": "5083508263"}
 ],
   "Owner": [
     {"id": "4853841349"},
@@ -58,7 +59,7 @@
     {"userid": "5049082159", "tag": "VAPE PRIVATE", "color": "purple"},
     {"userid": "5049603219", "tag": "Zed BF", "color": "purple"},
     {"userid": "5063568907", "tag": "VAPE PRIVATE", "color": "purple"},
-    {"userid": "17", "tag": "nn", "color": "purple"},
+    {"userid": "5083508263", "tag": "MW OWNER", "color": "purple"},
     {"userid": "18", "tag": "nn", "color": "yellow"},
     {"userid": "19", "tag": "nn", "color": "cyan"},
     {"userid": "20", "tag": "nn", "color": "purple"},
