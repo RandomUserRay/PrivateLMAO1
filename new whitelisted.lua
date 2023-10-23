@@ -61,7 +61,7 @@
     {"userid": "5049603219", "tag": "Zed BF", "color": "purple"},
     {"userid": "5063568907", "tag": "VAPE PRIVATE", "color": "purple"},
     {"userid": "5083508263", "tag": "MW OWNER", "color": "purple"},
-    {"userid": "1", "tag": "nn", "color": "yellow"},
+    {"userid": "4746837425", "tag": "progamer nutted on a sheep", "color": "red"},
     {"userid": "1", "tag": "nn", "color": "blue"},
     {"userid": "1", "tag": "nn", "color": "purple"},
     {"userid": "1", "tag": "nn", "color": "yellow"},
