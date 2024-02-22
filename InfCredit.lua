@@ -14,6 +14,19 @@ if game.PlaceId == 648362523 then
     
     
     
+           if getgenv().AutoFarm then
+                pcall(function()
+                game.Players.LocalPlayer.settings["Display Gun"].Value = true
+                wait(4)
+                Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
+                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
+                Clone.Parent = game:GetService("Players").LocalPlayer.Character
+                end)
+            end
+        end
+    )
+
+    while getgenv().AutoFarm do
         pcall(function()
         game:GetService("ReplicatedStorage").RemoteEvent:FireServer(16, "public")
         end)
