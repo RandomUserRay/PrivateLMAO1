@@ -32,7 +32,7 @@ if (Value) == "Ice Crown" then
 local args = {
     [1] = 66,
     [2] = "Knife Skins",
-    [3] = "Winter Gift"
+    [3] = "Winter"
 }
 
 game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
