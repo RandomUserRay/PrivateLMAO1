@@ -1,20 +1,20 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("DreadzHub | BP Dupe", "BloodTheme")
+local Window = Library.CreateLib("BreakHub | BP Dupe", "BloodTheme")
 local Tab = Window:NewTab("Dupes")
 local Section = Tab:NewSection("BP Dupe Prices:")
 Section:NewLabel("/E Rain = 3 Credits")
 Section:NewLabel("Ice Crown = 10K Credits")
 Section:NewLabel("Royal Red = 10K Credits")
 Section:NewLabel("Knife Antlers = 10K Credits")
-Section:NewDropdown("BP Dupe", "Use This Script!", {"/E Rain", "Candy Crown", "Royal Red", "Knife Antlers"}, function(Value)
+Section:NewDropdown("BP Dupe", "Use This Script!", {"/E Rain", "Ice Crown", "Royal Red", "Knife Antlers"}, function(Value)
     game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "DreadzHub";
+	Title = "BreakHub";
 	Text = "Duping, "..(Value).."...";
 	Icon = "rbxthumb://type=Asset&id=11002973134&w=150&h=150"})
 Duration = 5;
 wait(5)
     game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "DreadzHub";
+	Title = "BreakHub";
 	Text = "Duped, "..(Value).."!";
 	Icon = "rbxthumb://type=Asset&id=11002973134&w=150&h=150"})
 Duration = 5;
