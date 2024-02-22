@@ -1,6 +1,6 @@
 game:GetService("Players").LocalPlayer.Idled:connect(function()
 game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-end) 
+end
 
 if game.PlaceId == 648362523 then
     repeat wait() until game:IsLoaded()
