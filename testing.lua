@@ -3,7 +3,7 @@ local Window = Library.CreateLib("DreadzHub | BP Dupe", "BloodTheme")
 local Tab = Window:NewTab("Dupes")
 local Section = Tab:NewSection("BP Dupe Prices:")
 Section:NewLabel("/E Rain = 3 Credits")
-Section:NewLabel("Candy Crown = 10K Credits")
+Section:NewLabel("Ice Crown = 10K Credits")
 Section:NewLabel("Royal Red = 10K Credits")
 Section:NewLabel("Knife Antlers = 10K Credits")
 Section:NewDropdown("BP Dupe", "Use This Script!", {"/E Rain", "Candy Crown", "Royal Red", "Knife Antlers"}, function(Value)
@@ -28,7 +28,7 @@ local args = {
 
 game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(unpack(args))
 end
-if (Value) == "Mellow" then
+if (Value) == "Ice Crown" then
 local args = {
     [1] = 66,
     [2] = "Knife Skins",
