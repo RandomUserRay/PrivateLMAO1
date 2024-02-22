@@ -7,32 +7,13 @@ if game.PlaceId == 648362523 then
     game.StarterGui:SetCore(
         "SendNotification",
         {
-            Title = "Breaking Point AutoFarm Credits",
-            Text = "Updated by qa#0001, aka 2vsh on Roblox."
+            Title = "AutoFarm Credits Inf",
+            Text = "Made by Zxyia | a.k.a Ray"
         }
     )
     
     
     
-    Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
-    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
-    Clone.Parent = game:GetService("Players").LocalPlayer.Character
-    game.Players.LocalPlayer.settings["Display Gun"].Value = true
-    game.Players.LocalPlayer.CharacterAdded:Connect(
-        function()
-            if getgenv().AutoFarm then
-                pcall(function()
-                game.Players.LocalPlayer.settings["Display Gun"].Value = true
-                wait(4)
-                Clone = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Clone()
-                game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:Destroy()
-                Clone.Parent = game:GetService("Players").LocalPlayer.Character
-                end)
-            end
-        end
-    )
-
-    while getgenv().AutoFarm do
         pcall(function()
         game:GetService("ReplicatedStorage").RemoteEvent:FireServer(16, "public")
         end)
